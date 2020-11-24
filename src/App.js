@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './Card.js';
+import Recherche from './Recherche.js';
+
 
 // id, title, genre, image, description
 const movies = 
@@ -16,22 +19,16 @@ const movies =
     {"id":10,"title":"Silent Action","genre":"Action|Crime|Drama","image":"http://dummyimage.com/128x256.png/cc0000/ffffff","description":"Mauris sit amet eros. Suspendisse accumsan tortor quis turpis."}
 ];
 
-function App() {
+
+
+function App() 
+{
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Recherche></Recherche>
+        <Card image={movies[0].image} title={movies[0].title} genre={movies[0].genre} description={movies[0].description}></Card>
+        
       </header>
     </div>
   );
