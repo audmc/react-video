@@ -1,0 +1,25 @@
+# Des commentaires
+## On ignore tout ce qu'il y a dans node_modules/
+node_modules/
+
+# On peu ignorer des fichiers
+package.json
+
+# Les fichiers sont ignorés dans tous les dossiers
+index.js
+src/index.js
+
+# Modèles avec *
+# Ingorer tous les fichiers css
+*.css
+
+# ignorer tous les dossiers **
+# Ignorer dans src, dans les dossiers
+# ignorer tous les .css dans le dossier src/ uuniquement
+/src/**/*.css
+
+# Annuler ignorer
+# On ignore tous les css..
+/src/**/*.css
+# SAUF style.css
+!/src/style.css
